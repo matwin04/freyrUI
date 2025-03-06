@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+h1 {
+    font-family: Michroma;
+    text-align: center;
+}
+h2 {
+    font-family: Michroma;
+    text-align: center;
+}
+nav {
+    text-align: center;
+    width: 100%;
+}
+table {
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.albumcover {
+    width: 50px;
+    height: 50px;
+}

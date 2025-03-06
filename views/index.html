@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+    <title>freyrUI</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <h1>freyrUI</h1>
+    {{>navbar}}
+    <form id="downloadForm">
+        <h2>Enter URL to Download</h2>
+        <input id="urlInput" type="text" placeholder="Enter URL" required>
+        <button type="submit">Download</button>
+    </form>
+    <div id="downloadStatus">No Url Entered</div>
+    <script src="/public/renderer.js"></script>
+</body>

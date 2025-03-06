@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>freyrUI</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <h1>freyrUI</h1>
+    {{>navbar}}
+    <h2>Media</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Artist</th>
+                <th>Album</th>
+                <th>Year</th>
+            </tr>
+            <tbody>
+                {{#each songs}}
+                <tr>
+                    <td>
+                        <img class="albumcover" src="/media/{{artist}}/{{album}}/cover.jpg">
+                    </td>
+                    <td>{{title}}</td>
+                    <td><a href="/media/{{artist}}">{{artist}}</a></td>
+                    <td><a href="/media/{{artist}}/{{album}}">{{album}}</a></td>
+                    <td>{{year}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </thead>
+    </table>
+</body>
